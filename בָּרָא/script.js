@@ -18,6 +18,20 @@ async function loadPresets() {
         return [];
     }
 }
+//mobile stuff for toggles
+function toggleMenu() {
+  document.getElementById('mobile-menu').classList.toggle('open');
+  document.getElementById('hamburger').classList.toggle('open');
+}
+//mobile layer panel toggle
+function togglePanel() {
+  const panel = document.getElementById('layer-panel');
+  const btn = document.getElementById('panel-toggle');
+  const collapsed = panel.classList.toggle('collapsed');
+  btn.textContent = collapsed ? '▶' : '◀';
+  btn.title = collapsed ? 'Show panel' : 'Hide panel';
+}
+
 
 // ── Give ──
 function triggerGive() { fileInput.value = ''; fileInput.click(); }
