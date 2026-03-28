@@ -11,7 +11,7 @@ document.getElementById("shepherd").addEventListener("click", function() {
     document.getElementById("shepherd").style.filter = "invert(100%)";
     } 
     if (c >= 13) {
-        window.location.href = "../בָּרָא/";
+        window.location.href = "../cr/";
     }
 
 });

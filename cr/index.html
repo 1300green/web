@@ -5,8 +5,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="../textures/1300.png">
-  <title>/1300green/בָּרָא/</title>
+  <link rel="icon" href="../assets/1300.png">
+  <title>/1300green/cr/</title>
   <!-- <style></style> -->
   <link rel="stylesheet" href="style.css">
 </head>
@@ -14,14 +14,14 @@
 
 <nav>
   <div class="nav-left">
-    <button id="btn-give" onclick="triggerGive()"><strong>לָתֵת</strong> (give)</button>
-    <button id="btn-take" onclick="doTake()"><strong>לָקַחַת</strong> (take)</button>
-    <button id="btn-resources" onclick="openResources()"><strong>אֶמְצָעִי</strong> (resources)</button>
+    <button id="btn-give" onclick="triggerGive()">{+}</button>
+    <button id="btn-take" onclick="doTake()">{↓}</button>
+    <button id="btn-resources" onclick="openResources()">{g∈𝔾}</button>
   </div>
   <button class="hamburger" id="hamburger" onclick="toggleMenu()">
     <span></span><span></span><span></span>
   </button>
-  <span class="nav-hebrew">בָּרָא</span>
+  <span class="nav-hebrew">∀g∉𝔾</span>
  <div class="nav-logo">
   <a href="../">
     <img src="../textures/1300.png" alt="1300" onerror="this.style.display='none'">
@@ -30,9 +30,9 @@
 </nav>
 
 <div class="mobile-menu" id="mobile-menu">
-  <button onclick="doGive(); toggleMenu()"><strong>לָתֵת</strong> (give)</button>
-  <button onclick="doTake(); toggleMenu()"><strong>לָקַחַת</strong> (take)</button>
-  <button onclick="openResources(); toggleMenu()"><strong>אֶמְצָעִי</strong> (resources)</button>
+  <button onclick="doGive(); toggleMenu()"><strong>{+}</strong> (give)</button>
+  <button onclick="doTake(); toggleMenu()"><strong>{-}</strong> (take)</button>
+  <button onclick="openResources(); toggleMenu()"><strong>{ }</strong> (resources)</button>
 </div>
 
 <input type="file" id="file-input" accept="image/*" multiple="">
@@ -41,14 +41,14 @@
   <div id="canvas-area">
     <div class="canvas-placeholder" id="placeholder">
       </svg>
-      <span><strong>הַצָעָה</strong></span>
+      <span>(shirt)</span>
     </div>
   </div>
   
   <button class="panel-toggle" onclick="togglePanel()" id="panel-toggle" title="Hide panel">◀</button>
 
   <div id="layer-panel">
-    <h3>מַדָד</h3>
+    <h3>layer</h3>
     <div id="layer-list"></div>
     <div id="panel-actions">
       <button onclick="moveLayer(1)">↑</button>
@@ -59,7 +59,7 @@
 
 <div id="resources-modal" class="">
   <div class="modal-box">
-    <h2>אֶמְצָעִי</h2>
+    <h2>premade</h2>
     <div class="preset-list" id="preset-list"><div class="preset-item">1300.png</div><div class="preset-item">Choose.png</div></div>
     <button class="modal-close" onclick="closeResources()">exit</button>
   </div>
