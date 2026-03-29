@@ -105,7 +105,7 @@ nav button.active::after {
     font-size: 1.8rem;
     letter-spacing: 0.05em;
     color: var(--ink);
-    /* font-weight: bold; */
+    /* font-weight: bold        ; */
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
